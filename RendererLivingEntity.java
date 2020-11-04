@@ -52,10 +52,5 @@ public void renderNameTag(T entity, double x, double y, double z)
                     }
                 }
             }
-
-            if (!Reflector.RenderLivingEvent_Specials_Post_Constructor.exists() || !Reflector.postForgeBusEvent(Reflector.RenderLivingEvent_Specials_Post_Constructor, new Object[] {entity, this, Double.valueOf(x), Double.valueOf(y), Double.valueOf(z)}))
-            {
-                ;
-            }
         }
     }
