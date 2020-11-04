@@ -4,7 +4,7 @@
 
 public void renderNameTag(T entity, double x, double y, double z)
     {
-        if (entity.getName().equals(Minecraft.getMinecraft().getSession().getUsername()) && SettingsManager.loadEnabledFromFile("ModIngameName") == true && entity instanceof AbstractClientPlayer) {
+        if (entity.getName().equals(Minecraft.getMinecraft().getSession().getUsername()) && entity instanceof AbstractClientPlayer) {
         {
                 double d0 = entity.getDistanceSqToEntity(this.renderManager.livingPlayer);
                 float f = entity.isSneaking() ? NAME_TAG_RANGE_SNEAK : NAME_TAG_RANGE;
